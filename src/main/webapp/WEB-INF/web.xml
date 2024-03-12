@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+		 version="3.1">
+		 
+		 <servlet>
+		 	<servlet-name>bookevent</servlet-name>
+		 	<servlet-class>pak.bookevent.NewBookingServlet</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>bookevent</servlet-name>
+		 	<url-pattern>/booking</url-pattern>
+		 </servlet-mapping>
+		 
+		  <servlet>
+		 	<servlet-name>addbooking</servlet-name>
+		 	<servlet-class>pak.bookevent.BookingInsert</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>addbooking</servlet-name>
+		 	<url-pattern>/newfed</url-pattern>
+		 </servlet-mapping>
+		 
+		 
+		  <servlet>
+		 	<servlet-name>updfeedback</servlet-name>
+		 	<servlet-class>pak.bookevent.updatefeedback</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>updfeedback</servlet-name>
+		 	<url-pattern>/upd</url-pattern>
+		 </servlet-mapping>
+		 
+		 
+		 <servlet>
+		 	<servlet-name>delfeedback</servlet-name>
+		 	<servlet-class>pak.bookevent.deletefedservlet</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>delfeedback</servlet-name>
+		 	<url-pattern>/del</url-pattern>
+		 </servlet-mapping>
+		 
+		 
+		 
+		 
+		 
+		 
+</web-app>	 
+		 
